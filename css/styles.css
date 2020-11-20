@@ -39,10 +39,19 @@ html {
 	padding: 19px;
 	border: 1px solid #999;
 */	color: #222;
+	text-shadow: 5px 5px 2px darkgrey;
 }
 .nav-link-item-img {
 	width: 120px;
 }
+svg {
+	fill: #34bf49;
+	width: 45px;
+	height: 45px;
+	padding: 10px;
+	
+}
+
 .nav-link-item-first {
 	margin-left: 100px;
 	color: #222;
@@ -53,15 +62,16 @@ html {
 .nav-link-item-first:hover {/*
 	padding: 19px;
 	border: 1px solid #999;*/
-	color: #222;
+	text-shadow: 5px 5px 2px darkgrey;
 }
 .nav-button {
-	padding: 10px;
-	background-color: #fff;
-	border: none;
+	background-color: rgb(250, 250, 251);
+	border: transparent;
+	border-radius: 50%;
 	outline: none;
+	width: 45px;
+	height: 45px;
 	margin-left: auto;
-	box-shadow: 0 0 50px darkgrey; 
 }
 .nav-button:active {
 	background-color: #444;
@@ -114,9 +124,23 @@ html {
 .main-button-order:active {
 	background-color: green;
 }
-.main-button-story  {
+.main-button-story {
+	display: flex;
+	align-items: center;
+	outline: none;
+	background-color: transparent;
+	border: none;
+
+}
+.main-button-story:active {
+	background-color: rgb(52, 191, 73);
+	border-radius: 50px;
+	color: #fff;
+}
+
+.main-button-story img {
 	border-radius: 50%;
-	padding: 18px 20px;
+	padding: 20px;
 	outline: none;
 	border: none;
 	margin-right: 30px;
@@ -124,9 +148,6 @@ html {
 	box-shadow: 0 0 100px 1px darkgrey;
 }
 
-.main-button-story:active {
-	background-color: #444;
-}
 .main-button-text {
 	font-family:"Varela", serif;
 	font-size: 24px;
@@ -240,7 +261,33 @@ html {
 	color: grey;
 	font-size: 14px;
 }
-
+.user-div-span {
+	display: flex;
+	align-items: center;
+	margin-top: 50px;
+}
+span {
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	margin-right: 5px;
+	background-color: grey;
+}
+.user-div-span .active {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-right: 5px;
+	background-color: rgb(52, 191, 73);
+}
+span:hover {
+	width: 10px;
+	height: 10px;
+	margin: 0;
+	margin-right: 5px;
+	border-radius: 50%;
+	background-color: rgb(52, 191, 73);
+}
 .user-div-reverse {
 	display: flex;
 	flex-direction: row-reverse;
@@ -249,7 +296,6 @@ html {
 }
 .user-div-reverse .user-div-img {
 	width: 35%;
-	
 	margin-left: auto;
 }
 .user-div-article {
@@ -262,7 +308,7 @@ html {
 	color: #444;
 }
 .user-div-article-text {
-	line-height: 2;
+	line-height: 1.5;
 	color: grey;
 	font-family: "Varela", sans-serif;
 }
@@ -281,10 +327,11 @@ html {
 	display: flex;
 	justify-content: space-between;
 	width: 80%;
-	box-shadow: 0 0 50px lightgrey;
+	box-shadow: 0 0 100px lightgrey;
 }
 .input-email {
-	padding: 10px 20px;
+	font-family: "Varela", sans-serif;
+	padding: 15px 30px;
 	border: none;
 	outline: none;
 }
@@ -316,29 +363,28 @@ html {
 .footer-nav-link-item {
 	margin-top: 40px;
 	color: darkgrey;
-	padding: 50px;
+	padding: 40px;
 	text-decoration: none;
 	font-size: 20px;
+	transition: 0.5s ease;
 }
-.footer-nav-link-item:hover {/*
-	padding: 19px;
-	border: 1px solid #999;
-*/	color: rgb(52, 191, 73);
+.footer-nav-link-item:hover {
+	padding: 40px 40px 15px 40px;
+	box-shadow: 0px 5px 0 0px green;
+	color: rgb(52, 191, 73);
 }
-.footer-nav-link-item-img {
-	width: 120px;
-}
+
 .footer-nav-link-item-second {
 	color: rgb(52, 191, 73);
-	padding: 50px;
+	padding: 40px;
 	margin-top: 40px;
 	font-size: 20px;
 	text-decoration: none;
+	transition: 0.5s ease;
 }
-.footer-nav-link-item-first:hover {/*
-	padding: 19px;
-	border: 1px solid #999;*/
-	color: rgb(52, 191, 73);
+.footer-nav-link-item-second:hover {
+	padding: 40px 40px 15px 40px;
+	box-shadow: 0px 5px 0 0px green;
 }
 
 
